@@ -141,6 +141,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 html,
 body {
@@ -178,10 +179,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0;
+  }
+}
 .extendedborder-box {
   margin-top: 2px;
   padding-bottom: 24px;
   border-bottom: 2px dashed silver;
+}
+@media (max-width: 500px) {
+  .extendedborder-box {
+    padding-bottom: 10px;
+  }
 }
 .extendedborder-box .nav-menu {
   max-width: 800px;
@@ -193,13 +206,23 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.extendedborder-box nav {
+@media (max-width: 500px) {
+  .extendedborder-box .nav-menu {
+    flex-direction: column;
+  }
+}
+nav {
   padding-left: 10px;
   display: flex;
   justify-content: space-evenly;
   width: 45.09%;
 }
-.extendedborder-box a {
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
+}
+nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
@@ -215,11 +238,27 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    margin-left: 24px;
+  }
+}
 .home header {
   border-bottom: 2px dashed silver;
+  /*img{
+      @media @mobile {
+        margin-top: 0px;
+        padding-left: 24px;
+      }
+    }*/
 }
 .home header .header-content {
   padding: 20px 0 10px 0;
+}
+@media (max-width: 500px) {
+  .home header .header-content {
+    margin-top: -5px;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -227,20 +266,48 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+    height: auto;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
