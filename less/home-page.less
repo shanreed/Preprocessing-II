@@ -1,19 +1,18 @@
 .home {
   @media @mobile {
     margin-left: 24px;
-    
   }
   header{
+    
     border-bottom: 2px dashed silver;
-    .header-content {
+  }
+.header-content {
     padding: 20px 0 10px 0;
     @media @mobile {
       margin-top: -5px;
       
     }
-    }
-  }
-
+}
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -22,6 +21,7 @@
     @media @mobile {
       flex-direction: column;
     }
+
    
     
     .text-content {
@@ -63,27 +63,27 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
-      
+  }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 95%;
+      margin-left: 0;
+    }
 
     img {
       border-radius: 10px;
-      @media @mobile {
-        width: 100%;
-        height: auto;
-      }
     }
   }
-}
 
   .content-pick {
     padding-top: 30px;
@@ -92,24 +92,27 @@
     justify-content: space-between;
     @media @mobile {
       flex-direction: column;
-      padding-left: 45px;
-      margin-top: 23px;
-      }
-    
-  }
-}
+      
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       @media @mobile {
         width: 85%;
+        padding: 3px 0 0 45px;
+      }
+    }
+    .second-pick {
+      @media @mobile {
+        margin-top: -6px;
+      }
+    }
+    .bottom-pick{
+      @media @mobile {
+        margin-top: -6px;
+        
+      }
+    }
   }
 }// home
-
-
-.bottom-pick{
-  @media @mobile {
-    margin-top: -5px;
-  }
-}
